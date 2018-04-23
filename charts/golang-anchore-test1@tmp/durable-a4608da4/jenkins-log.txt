@@ -1,0 +1,5 @@
++ make tag
+sed -i -e "s/version:.*/version: 0.0.9/" Chart.yaml
+sed -i -e "s/repository: .*/repository: 10.3.250.197:5000\/rawlingsj\/golang-anchore-test1/" values.yaml
+sed -i -e "s/tag: .*/tag: 0.0.9/" values.yaml
+git add --all
