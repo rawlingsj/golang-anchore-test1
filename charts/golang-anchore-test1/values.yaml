@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: 10.3.250.197:5000/rawlingsj/golang-anchore-test1
+  tag: 0.0.2
   pullPolicy: IfNotPresent
 service:
   name: golang-anchore-test1
