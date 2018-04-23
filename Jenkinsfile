@@ -59,6 +59,7 @@ pipeline {
               container('go') {
                 sh "make build"
                 sh 'export VERSION=`cat VERSION` && skaffold run -f skaffold.yaml'
+                  input 'ok'
                 sh 'jx step post build'
               }
             }
